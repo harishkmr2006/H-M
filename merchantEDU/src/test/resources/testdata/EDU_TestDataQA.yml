@@ -1,0 +1,125 @@
+selenium:
+    server: local
+    remote:
+        host: http://10.60.218.54:4444/wd/hub
+        port: 4444
+    browser: firefox
+    driverpath: "./src/test/resources/seleniumdriver/"
+    timeout: 60
+    
+baseurl: https://castor.sit.com/cb/
+testenv: qa
+#castorUrl: http://castor-plmat.hm.com/
+castorUrl: http://castor-plmsit.hm.com/
+
+ 
+##########################################################################################
+#
+#******* Testdata for Castor Buyer*******
+#
+########################################################################################## 
+
+
+loginInfo:
+  castorBuyer:
+    username: hmtest
+    password: HMTEST
+    
+    
+#    username: TestEverything
+#    password: castor    
+    
+productDevlopment:
+  office: SEBO
+  season: 7-2018
+  department: 3209
+  Concept: Ladies Acc belts shoes bags
+  ProductType: Other accessories - Accessories
+  phase: Quotation
+  purposeOfDev: Lace quality
+  valueDriver: Lace
+  notes: Planning 2 articles
+  targetPrice: 10.20
+  Currency: USD
+  
+AddRowPlanDelivery:
+  Quantity: 90000
+  
+Mchart:
+  ID: "002-58695-3"
+  
+userInfoToPublish: HM TEST
+
+Appearance:
+  GraphicalAppearance: Lace
+  List:
+      - "11-107"
+      - "10-201"
+      - "09-090"
+      
+ComponentDevelopment: 10864
+LabelID: "01"
+Image: ABI-shoppe
+office: GPOO
+
+
+##########################################################################################
+#
+#******* Testdata for Castor GPOO Merchant*******
+#
+########################################################################################## 
+
+Merchant:
+  Options:
+    ProductionGroup: Woven
+    ProductionType: Blouses
+    ProductionAppearance: "Fancy - Blouse"
+    Country: China
+    
+    BOMSearchID: 2108650
+    position: Shell
+    office: CNGZ
+    
+Disconnect:
+  List:
+      - "11-107"
+      - "10-201" 
+      
+Connect:
+  List:
+      - "09-090"
+      
+Option:
+  CopyName: Extra lining
+  
+
+##########################################################################################
+#
+#******* Testdata for Castor CNGZ Merchant*******
+#
+########################################################################################## 
+  
+CNGZMerchant:
+  Header:
+    Weight: 200
+    Supplier1: 100385
+    Supplier2: 106771
+    
+  options:
+    country: China
+  BOM:
+    placement: "BASE FABRIC "
+    OriginCountry: China
+   
+    
+##########################################################################################
+#
+#******* Configurations for Email Module  *******
+#
+##########################################################################################
+
+results:
+   sendEmail: "yes"
+   recipients: 
+       recipient1: shivam.tiwari@hm.com
+       recipient1: shivam.tiwari1@hm.com       
